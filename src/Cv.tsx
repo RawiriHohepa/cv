@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Entry from "./components/Entry";
 import Spacer from "./components/Spacer";
 import {
@@ -24,7 +27,17 @@ const Paper = styled.div`
 const HeaderSection = styled.div`
     height: 10%;
     width: 100%;
+    box-sizing: border-box;
     background: #59BCDB80;
+
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+`
+
+const ContactsSection = styled.div`
+    display: flex;
+    flex-direction: column;
 `
 
 const Content = styled.div`
@@ -47,6 +60,34 @@ const RightSection = styled.div`
 
     background: #B3E3F180;
 `
+
+const ContactsItem = styled.a`
+    color: #000000;
+    text-align: right;
+`
+
+const contacts = [
+    {
+        icon: faGithub,
+        name: "RawiriHohepa",
+        link: "https://github.com/rawirihohepa",
+    },
+    {
+        icon: faEnvelope,
+        name: "rawirihohepa@gmail.com",
+        link: "mailto:rawirihohepa@gmail.com",
+    },
+    {
+        icon: faPhone,
+        name: "028 407 9883",
+        link: "tel:028 407 9883",
+    },
+    {
+        icon: faLinkedin,
+        name: "rawiri-hohepa",
+        link: "https://www.linkedin.com/in/rawiri-hohepa/",
+    },
+];
 
 const experience = [
     {
@@ -180,8 +221,18 @@ const Cv = () => {
     return (
         <Paper>
             <HeaderSection>
-                <Title>Rawiri Hohepa</Title>
-                <SubTitle>Final Year Software Engineering Student</SubTitle>
+                <div>
+                    <Title>Rawiri Hohepa</Title>
+                    <SubTitle>Final Year Software Engineering Student</SubTitle>
+                </div>
+                <ContactsSection>
+                    {contacts.map(contact => (
+                        <div style={{ display: "flex", justifyContent: "space-between" }} key={contact.name}>
+                            <FontAwesomeIcon icon={contact.icon} />
+                            <ContactsItem href={contact.link}>{contact.name}</ContactsItem>
+                        </div>
+                    ))}
+                </ContactsSection>
             </HeaderSection>
 
             <Content>
