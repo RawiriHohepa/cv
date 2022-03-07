@@ -1,5 +1,4 @@
 import React from "react";
-import Spacer from "./Spacer";
 import {
     Heading,
     SubHeading,
@@ -10,18 +9,18 @@ type EntryProps = {
     title: string;
     subtitle?: string;
     description?: string;
+    size?: "regular" | "small"
     children: React.ReactNode;
 }
 
 const Entry = (props: EntryProps) => {
     return (
-        <>
-            <Heading>{props.title}</Heading>
-            {!!props.subtitle && <SubHeading>{props.subtitle}</SubHeading>}
-            {!!props.description && <Description>{props.description}</Description>}
+        <div style={{ marginBottom: "0.5rem" }}>
+            <Heading size={props.size}>{props.title}</Heading>
+            {!!props.subtitle && <SubHeading size={props.size}>{props.subtitle}</SubHeading>}
+            {!!props.description && <Description size={props.size}>{props.description}</Description>}
             {props.children}
-            <Spacer height={0.5} />
-        </>
+        </div>
     )
 }
 

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Entry from "./components/Entry";
-import Spacer from "./components/Spacer";
 import {
     Title,
     SubTitle,
@@ -28,9 +27,10 @@ const HeaderSection = styled.div`
     height: 10%;
     width: 100%;
     box-sizing: border-box;
+    padding: 2rem;
+
     background: #59BCDB80;
 
-    padding: 2rem;
     display: flex;
     justify-content: space-between;
 `
@@ -50,6 +50,9 @@ const LeftSection = styled.div`
     height: 100%;
     box-sizing: border-box;
     padding: 2rem;
+    & > :first-child {
+        margin-top: 0;
+    }
 `
 
 const RightSection = styled.div`
@@ -57,6 +60,9 @@ const RightSection = styled.div`
     height: 100%;
     box-sizing: border-box;
     padding: 1.5rem;
+    & > :first-child {
+        margin-top: 0;
+    }
 
     background: #B3E3F180;
 `
@@ -64,6 +70,7 @@ const RightSection = styled.div`
 const ContactsItem = styled.a`
     color: #000000;
     text-align: right;
+    margin-left: 0.5rem;
 `
 
 const contacts = [
@@ -227,7 +234,7 @@ const Cv = () => {
                 </div>
                 <ContactsSection>
                     {contacts.map(contact => (
-                        <div style={{ display: "flex", justifyContent: "space-between" }} key={contact.name}>
+                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.25rem" }} key={contact.name}>
                             <FontAwesomeIcon icon={contact.icon} />
                             <ContactsItem href={contact.link}>{contact.name}</ContactsItem>
                         </div>
@@ -238,7 +245,6 @@ const Cv = () => {
             <Content>
                 <LeftSection>
                     <Section>Experience</Section>
-                    <Spacer height={0.75} />
 
                     {experience.map(entry => (
                         <Entry
@@ -257,7 +263,6 @@ const Cv = () => {
                     ))}
 
                     <Section>Projects</Section>
-                    <Spacer height={0.75} />
 
                     {projects.map(entry => (
                         <Entry
@@ -277,12 +282,10 @@ const Cv = () => {
                     ))}
 
                     <Section>Ask me about...</Section>
-                    <Spacer height={0.75} />
 
                     {skills.map(skill => (
                         <div key={skill.title}>
                             <Text><Bold>{skill.title}</Bold>: {skill.subtitle}</Text>
-                            <Spacer height={0.25} />
                         </div>
                     ))}
                 </LeftSection>
@@ -290,7 +293,6 @@ const Cv = () => {
 
                 <RightSection>
                     <Section>Education</Section>
-                    <Spacer height={0.75} />
 
                     <Entry
                         title="University of Auckland | BE (Hons) & BA"
@@ -306,24 +308,23 @@ const Cv = () => {
                     </Entry>
 
                     <Section>Leadership & Community</Section>
-                    <Spacer height={0.75} />
 
                     {leadership.map(entry => (
                         <Entry
                             key={entry.title}
                             title={entry.title}
                             subtitle={entry.subtitle}
+                            size="small"
                         >
                             <Details>
                                 {entry.details.map((detail, index) => (
-                                    <DetailsItem key={index}>{detail}</DetailsItem>
+                                    <DetailsItem key={index} size="small">{detail}</DetailsItem>
                                 ))}
                             </Details>
                         </Entry>
                     ))}
 
                     <Section>References</Section>
-                    <Spacer height={0.75} />
 
                     <Text>Available upon request</Text>
                 </RightSection>
