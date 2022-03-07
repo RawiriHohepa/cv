@@ -1,6 +1,6 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { DetailsItem, Bold } from "./components/text";
+import { DetailsItem, Text, Bold } from "./components/text";
 
 export const contacts = [
     {
@@ -105,6 +105,19 @@ export const skills = [
     {
         title: "Interests",
         subtitle: "Tabletop roleplaying, Video games, Finances",
+    },
+];
+
+export const education = [
+    {
+        title: "University of Auckland | BE (Hons) & BA",
+        subtitle: "Software Engineering, Psychology, Māori Studies",
+        description: "Mar 2018 — Nov 2022",
+        gpa: <Text>GPA 8.6/9 (<Bold>A to A+</Bold> average)</Text>,
+        awards: [
+            "Dean’s Honours List | 2018, 2019, 2021",
+            "Māori Academic Excellence Scholarship | 2017",
+        ],
     },
 ];
 

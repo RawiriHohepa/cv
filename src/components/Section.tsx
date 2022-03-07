@@ -45,6 +45,30 @@ export const renderText = (entry: EntryPropsText, size?: "small" | "regular") =>
     </div>
 )
 
+export type EntryPropsEducation = {
+    title: string;
+    subtitle: string;
+    description: string;
+    gpa: JSX.Element;
+    awards: string[];
+}
+
+export const renderEducation = (entry: EntryPropsEducation, size?: "small" | "regular") => (
+    <Entry
+        title={entry.title}
+        subtitle={entry.subtitle}
+        description={entry.description}
+    >
+        {entry.gpa}
+        <Text>Awards:</Text>
+        <div style={{ marginLeft: "1.5rem" }}>
+            {entry.awards.map(award => (
+                <Text key={award} style={{ color: "#4B4B4B" }}>{award}</Text>
+            ))}
+        </div>
+    </Entry>
+)
+
 const Section = <EntryProps,>(props: SectionProps<EntryProps>) => {
     return (
         <>

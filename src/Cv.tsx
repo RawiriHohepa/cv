@@ -1,25 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Entry from "./components/Entry";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     Title,
     SubTitle,
     SectionTitle,
     Text,
-    Bold,
 } from "./components/text";
 import Section, {
     EntryPropsDetails,
     EntryPropsText,
+    EntryPropsEducation,
     renderDetails,
     renderText,
+    renderEducation,
 } from "./components/Section";
 import {
     contacts,
     experience,
     projects,
     skills,
+    education,
     leadership,
 } from "./data";
 
@@ -114,22 +115,12 @@ const Cv = () => {
                     />
                 </LeftSection>
 
-
                 <RightSection>
-                    <SectionTitle>Education</SectionTitle>
-
-                    <Entry
-                        title="University of Auckland | BE (Hons) & BA"
-                        subtitle="Software Engineering, Psychology, Māori Studies"
-                        description="Mar 2018 — Nov 2022"
-                    >
-                        <Text>GPA 8.6/9 (<Bold>A to A+</Bold> average)</Text>
-                        <Text>Awards:</Text>
-                        <div style={{ marginLeft: "1.5rem" }}>
-                            <Text style={{ color: "#4B4B4B" }}>Dean’s Honours List | 2018, 2019, 2021</Text>
-                            <Text style={{ color: "#4B4B4B" }}>Māori Academic Excellence Scholarship | 2017</Text>
-                        </div>
-                    </Entry>
+                    <Section<EntryPropsEducation>
+                        title="Education"
+                        entries={education}
+                        renderMethod={renderEducation}
+                    />
 
                     <Section<EntryPropsDetails>
                         title="Leadership & Community"
