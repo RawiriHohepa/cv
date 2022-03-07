@@ -11,6 +11,7 @@ import {
     Details,
     DetailsItem,
     Text,
+    Bold,
 } from "./components/text";
 
 const Paper = styled.div`
@@ -52,23 +53,23 @@ const experience = [
         title: "Full Stack Developer | Maverick",
         subtitle: "Nov 2021 — Feb 2022 (4 months)",
         details: [
-            "Created React Typescript webapp from scratch for a digital pilates platform, and integrated with C# API",
-            "Created NextJS Typescript webapp MVP from scratch for a non-profit food organisation, and integrated with Strapi Content Management System (CMS)",
+            <DetailsItem>Created <Bold>React Typescript</Bold> webapp from scratch for a digital pilates platform, and integrated with <Bold>C#</Bold> API</DetailsItem>,
+            <DetailsItem>Created <Bold>NextJS Typescript</Bold> webapp MVP from scratch for a non-profit food organisation, and integrated with Strapi <Bold>Content Management System (CMS)</Bold></DetailsItem>,
         ],
     },
     {
         title: "Software Developer Intern | Pocketful",
         subtitle: "Aug 2020 — Feb 2021 (7 months)",
         details: [
-            "Overhauled React Native user interface using newly created components written in Typescript",
-            "Liaised with and integrated external company in C# & React Native proof-of-concept to reward users with digital vouchers",
+            <DetailsItem>Overhauled <Bold>React Native</Bold> user interface using newly created components written in <Bold>Typescript</Bold></DetailsItem>,
+            <DetailsItem>Liaised with and integrated external company in <Bold>C#</Bold> & <Bold>React Native</Bold> proof-of-concept to reward users with digital vouchers</DetailsItem>,
         ],
     },
     {
         title: "Software Engineer Intern | ASB Bank",
         subtitle: "Nov 2019 — Feb 2020 (4 months)",
         details: [
-            "Designed and created React webapp and C# Web API to store, retrieve, and display international payment updates",
+            <DetailsItem>Designed and created <Bold>React</Bold> webapp and <Bold>C#</Bold> Web API to store, retrieve, and display international payment updates</DetailsItem>,
         ],
     },
 ];
@@ -80,8 +81,8 @@ const projects = [
         // nerdsopposesociety.xyz | GitHub: nerds-oppose-society
         subtitle: "May 2021",
         details: [
-            "Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a 100% mark",
-            "Integrated React frontend system with SocketJS & ExpressJS backend systems written in Typescript",
+            <DetailsItem>Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a <Bold>100% mark</Bold></DetailsItem>,
+            <DetailsItem>Integrated <Bold>React</Bold> frontend system with <Bold>SocketJS</Bold> & <Bold>ExpressJS</Bold> backend systems written in <Bold>Typescript</Bold></DetailsItem>,
         ],
     },
     {
@@ -90,8 +91,8 @@ const projects = [
         // slosh.lol | GitHub: Sloshed
         subtitle: "Aug 2020",
         details: [
-            "Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using Google Places & Geolocation APIs",
-            "Won Best Design at Summer of Tech’s 2020 Create Camp Hackathon",
+            <DetailsItem>Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using <Bold>Google Places & Geolocation APIs</Bold></DetailsItem>,
+            <DetailsItem><Bold>Won Best Design</Bold> at Summer of Tech's 2020 Create Camp Hackathon</DetailsItem>,
         ],
     },
     {
@@ -99,8 +100,8 @@ const projects = [
         // GitHub: Investments-Tracker
         subtitle: "Ongoing",
         details: [
-            "Created ExpressJS API written in Typescript to automatically retrieve and collate personal investments using web scraping & external APIs",
-            "Future plans to automatically call API periodically, store results in a MongoDB database, and display helpful statistics in a React webapp",
+            <DetailsItem>Created <Bold>ExpressJS</Bold> API written in <Bold>Typescript</Bold> to automatically retrieve and collate personal investments using <Bold>web scraping</Bold> & external APIs</DetailsItem>,
+            <DetailsItem>Future plans to automatically call API periodically, store results in a <Bold>MongoDB</Bold> database, and display helpful statistics in a <Bold>React</Bold> webapp</DetailsItem>,
         ],
     },
 ];
@@ -153,7 +154,9 @@ const Cv = () => {
                         >
                             <Details>
                                 {entry.details.map((detail, index) => (
-                                    <DetailsItem key={index}>{detail}</DetailsItem>
+                                    <div key={index}>
+                                        {detail}
+                                    </div>
                                 ))}
                             </Details>
                         </Entry>
@@ -170,7 +173,9 @@ const Cv = () => {
                         >
                             <Details>
                                 {entry.details.map((detail, index) => (
-                                    <DetailsItem key={index}>{detail}</DetailsItem>
+                                    <div key={index}>
+                                        {detail}
+                                    </div>
                                 ))}
                             </Details>
                         </Entry>
@@ -181,7 +186,7 @@ const Cv = () => {
 
                     {skills.map(skill => (
                         <div key={skill.title}>
-                            <Text>{skill.title}: {skill.subtitle}</Text>
+                            <Text><Bold>{skill.title}</Bold>: {skill.subtitle}</Text>
                             <Spacer height={0.25} />
                         </div>
                     ))}

@@ -30,3 +30,7 @@ export const DetailsItem = styled.li`
 export const Text = styled.p`
     margin: 0;
 `
+
+export const Bold = styled.span`
+    font-weight: bold;
+`

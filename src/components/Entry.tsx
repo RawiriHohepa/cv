@@ -14,8 +14,8 @@ type EntryProps = {
 const Entry = (props: EntryProps) => {
     return (
         <>
-            <Heading>Full Stack Developer | Maverick</Heading>
-            <SubHeading>Nov 2021 — Feb 2022 (4 months)</SubHeading>
+            <Heading>{props.title}</Heading>
+            <SubHeading>{props.subtitle}</SubHeading>
             {props.children}
             <Spacer height={0.5} />
         </>
