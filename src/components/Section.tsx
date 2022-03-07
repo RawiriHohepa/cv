@@ -2,21 +2,46 @@ import React from "react";
 import Entry from "./Entry";
 import { Details, SectionTitle, Text, Bold } from "./text";
 
-type SectionProps<EntryProps> = {
+type SectionProps = {
     title: string;
-    entries: EntryProps[];
-    size?: "small" | "regular";
-    renderMethod: (entryProps: EntryProps, size?: "small" | "regular") => JSX.Element;
+    size?: "regular" | "small";
+} & (
+    | SectionPropsWithDetails
+    | SectionPropsWithText
+    | SectionPropsWithEducation
+);
+type SectionPropsWithDetails = {
+    type: "details";
+    entries: EntryPropsDetails[];
+}
+type SectionPropsWithText = {
+    type: "text";
+    entries: EntryPropsText[];
+}
+type SectionPropsWithEducation = {
+    type: "education";
+    entries: EntryPropsEducation[];
 }
 
-export type EntryPropsDetails = {
+type EntryPropsDetails = {
     title: string;
     subtitle?: string;
     description?: string;
     details: JSX.Element[];
 }
+type EntryPropsText = {
+    title: string;
+    subtitle: string;
+}
+type EntryPropsEducation = {
+    title: string;
+    subtitle: string;
+    description: string;
+    gpa: JSX.Element;
+    awards: string[];
+}
 
-export const renderDetails = (entry: EntryPropsDetails, size?: "small" | "regular") => (
+const renderDetails = (entry: EntryPropsDetails, size?: "small" | "regular") => (
     <Entry
         key={entry.title}
         title={entry.title}
@@ -34,26 +59,13 @@ export const renderDetails = (entry: EntryPropsDetails, size?: "small" | "regula
     </Entry>
 )
 
-export type EntryPropsText = {
-    title: string;
-    subtitle: string;
-}
-
-export const renderText = (entry: EntryPropsText, size?: "small" | "regular") => (
+const renderText = (entry: EntryPropsText, size?: "small" | "regular") => (
     <div key={entry.title}>
         <Text><Bold>{entry.title}</Bold>: {entry.subtitle}</Text>
     </div>
 )
 
-export type EntryPropsEducation = {
-    title: string;
-    subtitle: string;
-    description: string;
-    gpa: JSX.Element;
-    awards: string[];
-}
-
-export const renderEducation = (entry: EntryPropsEducation, size?: "small" | "regular") => (
+const renderEducation = (entry: EntryPropsEducation, size?: "small" | "regular") => (
     <Entry
         title={entry.title}
         subtitle={entry.subtitle}
@@ -69,16 +81,30 @@ export const renderEducation = (entry: EntryPropsEducation, size?: "small" | "re
     </Entry>
 )
 
-const Section = <EntryProps,>(props: SectionProps<EntryProps>) => {
-    return (
-        <>
-            <SectionTitle>{props.title}</SectionTitle>
-
-            {props.entries.map(entry => (
-                props.renderMethod(entry, props.size)
-            ))}
-        </>
-    );
+const Section = (props: SectionProps) => {
+    switch (props.type) {
+        case "details":
+            return (
+                <>
+                    <SectionTitle>{props.title}</SectionTitle>
+                    {props.entries.map(entry => renderDetails(entry, props.size))}
+                </>
+            );
+        case "text":
+            return (
+                <>
+                    <SectionTitle>{props.title}</SectionTitle>
+                    {props.entries.map(entry => renderText(entry, props.size))}
+                </>
+            );
+        case "education":
+            return (
+                <>
+                    <SectionTitle>{props.title}</SectionTitle>
+                    {props.entries.map(entry => renderEducation(entry, props.size))}
+                </>
+            );
+    }
 }
 
 export default Section;

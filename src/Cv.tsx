@@ -7,14 +7,7 @@ import {
     SectionTitle,
     Text,
 } from "./components/text";
-import Section, {
-    EntryPropsDetails,
-    EntryPropsText,
-    EntryPropsEducation,
-    renderDetails,
-    renderText,
-    renderEducation,
-} from "./components/Section";
+import Section from "./components/Section";
 import {
     contacts,
     experience,
@@ -96,37 +89,37 @@ const Cv = () => {
 
             <Content>
                 <LeftSection>
-                    <Section<EntryPropsDetails>
+                    <Section
+                        type="details"
                         title="Experience"
                         entries={experience}
-                        renderMethod={renderDetails}
                     />
 
-                    <Section<EntryPropsDetails>
+                    <Section
+                        type="details"
                         title="Projects"
                         entries={projects}
-                        renderMethod={renderDetails}
                     />
 
-                    <Section<EntryPropsText>
+                    <Section
+                        type="text"
                         title="Ask me about..."
                         entries={skills}
-                        renderMethod={renderText}
                     />
                 </LeftSection>
 
                 <RightSection>
-                    <Section<EntryPropsEducation>
+                    <Section
+                        type="education"
                         title="Education"
                         entries={education}
-                        renderMethod={renderEducation}
                     />
 
-                    <Section<EntryPropsDetails>
+                    <Section
+                        type="details"
                         title="Leadership & Community"
                         entries={leadership}
                         size="small"
-                        renderMethod={renderDetails}
                     />
 
                     <SectionTitle>References</SectionTitle>
