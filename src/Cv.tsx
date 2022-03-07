@@ -9,8 +9,12 @@ import {
     Text,
     Bold,
 } from "./components/text";
-import SectionWithDetails from "./components/SectionWithDetails";
-import SectionWithText from "./components/SectionWithText";
+import Section, {
+    EntryPropsDetails,
+    EntryPropsText,
+    renderDetails,
+    renderText,
+} from "./components/Section";
 import {
     contacts,
     experience,
@@ -91,19 +95,22 @@ const Cv = () => {
 
             <Content>
                 <LeftSection>
-                    <SectionWithDetails
+                    <Section<EntryPropsDetails>
                         title="Experience"
                         entries={experience}
+                        renderMethod={renderDetails}
                     />
 
-                    <SectionWithDetails
+                    <Section<EntryPropsDetails>
                         title="Projects"
                         entries={projects}
+                        renderMethod={renderDetails}
                     />
 
-                    <SectionWithText
+                    <Section<EntryPropsText>
                         title="Ask me about..."
                         entries={skills}
+                        renderMethod={renderText}
                     />
                 </LeftSection>
 
@@ -124,10 +131,11 @@ const Cv = () => {
                         </div>
                     </Entry>
 
-                    <SectionWithDetails
+                    <Section<EntryPropsDetails>
                         title="Leadership & Community"
                         entries={leadership}
                         size="small"
+                        renderMethod={renderDetails}
                     />
 
                     <SectionTitle>References</SectionTitle>
