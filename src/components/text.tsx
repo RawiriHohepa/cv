@@ -9,7 +9,7 @@ export const SubTitle = styled.h1`
     font-weight: normal;
     color: #686868;
 `
-export const Section = styled.h2`
+export const SectionTitle = styled.h2`
     margin: 2rem 0 1rem 0;
     font-weight: normal;
     color: #686868;
@@ -46,7 +46,7 @@ export const Description = styled.h4`
     ${({ size }: { size?: "regular" | "small" }) => {
         if (size === "small") {
             return `
-                font-size: 0.75rem;
+                font-size: 0.8rem;
             `
         }
     }}
@@ -63,7 +63,7 @@ export const DetailsItem = styled.li`
     ${({ size }: { size?: "regular" | "small" }) => {
         if (size === "small") {
             return `
-                font-size: 0.75rem;
+                font-size: 0.8rem;
             `
         }
     }}
