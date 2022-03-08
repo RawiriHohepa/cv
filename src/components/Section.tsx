@@ -61,7 +61,7 @@ const renderDetails = (entry: EntryPropsDetails, size?: "small" | "regular") => 
 
 const renderText = (entry: EntryPropsText, size?: "small" | "regular") => (
     <div key={entry.title}>
-        <Text>{entry.title}: <span style={{ color: "#4B4B4B" }}>{entry.subtitle}</span></Text>
+        <Text size={size}>{entry.title}: <span style={{ color: "#4B4B4B" }}>{entry.subtitle}</span></Text>
     </div>
 )
 
@@ -86,21 +86,21 @@ const Section = (props: SectionProps) => {
         case "details":
             return (
                 <>
-                    <SectionTitle>{props.title}</SectionTitle>
+                    <SectionTitle size={props.size}>{props.title}</SectionTitle>
                     {props.entries.map(entry => renderDetails(entry, props.size))}
                 </>
             );
         case "text":
             return (
                 <>
-                    <SectionTitle>{props.title}</SectionTitle>
+                    <SectionTitle size={props.size}>{props.title}</SectionTitle>
                     {props.entries.map(entry => renderText(entry, props.size))}
                 </>
             );
         case "education":
             return (
                 <>
-                    <SectionTitle>{props.title}</SectionTitle>
+                    <SectionTitle size={props.size}>{props.title}</SectionTitle>
                     {props.entries.map(entry => renderEducation(entry, props.size))}
                 </>
             );

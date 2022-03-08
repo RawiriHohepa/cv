@@ -15,7 +15,7 @@ export const SubTitle = (props: TextProps) =>
     <h1 className={styles.subTitle} style={props.style}>{props.children}</h1>
 
 export const SectionTitle = (props: TextProps) => 
-    <h2 className={styles.sectionTitle} style={props.style}>{props.children}</h2>
+    <h2 className={`${styles.sectionTitle} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</h2>
 
 export const Heading = (props: TextProps) => 
     <h3 className={`${styles.heading} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</h3>

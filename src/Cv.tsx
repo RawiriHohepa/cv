@@ -27,7 +27,7 @@ const HeaderSection = styled.div`
     height: 10%;
     width: 100%;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 2rem 3rem;
 
     background: #59BCDB80;
 
@@ -43,21 +43,21 @@ const Content = styled.div`
     display: flex;
 `
 const LeftSection = styled.div`
-    width: 60%;
+    width: 57.5%;
     height: 100%;
     box-sizing: border-box;
-    padding: 1.5rem;
+    padding: 2rem 3rem;
     & > :first-child {
         margin-top: 0;
     }
 `
 const RightSection = styled.div`
-    width: 40%;
+    width: 42.5%;
     height: 100%;
     box-sizing: border-box;
-    padding: 1.25rem;
+    padding: 2rem 3rem 2rem 1.5rem;
     & > :first-child {
-        margin-top: 0.25rem;
+        margin-top: 0;
     }
 
     background: #B3E3F180;
@@ -66,7 +66,7 @@ const RightSection = styled.div`
 const ContactsItem = styled.a`
     color: #000000;
     text-align: right;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 `
 
 const Cv = () => {
@@ -100,12 +100,6 @@ const Cv = () => {
                         title="Projects"
                         entries={projects}
                     />
-
-                    <Section
-                        type="text"
-                        title="Ask me about..."
-                        entries={skills}
-                    />
                 </LeftSection>
 
                 <RightSection>
@@ -113,6 +107,7 @@ const Cv = () => {
                         type="education"
                         title="Education"
                         entries={education}
+                        size="small"
                     />
 
                     <Section
@@ -122,8 +117,14 @@ const Cv = () => {
                         size="small"
                     />
 
-                    <SectionTitle>References</SectionTitle>
+                    <Section
+                        type="text"
+                        title="Ask me about..."
+                        entries={skills}
+                        size="small"
+                    />
 
+                    <SectionTitle size="small">References</SectionTitle>
                     <Text>Available upon request</Text>
                 </RightSection>
             </Content>
