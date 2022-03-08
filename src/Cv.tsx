@@ -46,7 +46,7 @@ const LeftSection = styled.div`
     width: 60%;
     height: 100%;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1.5rem;
     & > :first-child {
         margin-top: 0;
     }
@@ -55,9 +55,9 @@ const RightSection = styled.div`
     width: 40%;
     height: 100%;
     box-sizing: border-box;
-    padding: 1.5rem;
+    padding: 1.25rem;
     & > :first-child {
-        margin-top: 0;
+        margin-top: 0.25rem;
     }
 
     background: #B3E3F180;

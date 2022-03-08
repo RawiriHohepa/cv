@@ -113,7 +113,7 @@ export const education = [
         title: "University of Auckland | BE (Hons) & BA",
         subtitle: "Software Engineering, Psychology, Māori Studies",
         description: "Mar 2018 — Nov 2022",
-        gpa: <Text>GPA 8.6/9 (<Bold>A to A+</Bold> average)</Text>,
+        gpa: <Text size="small">GPA 8.6/9 (<Bold>A to A+</Bold> average)</Text>,
         awards: [
             "Dean’s Honours List | 2018, 2019, 2021",
             "Māori Academic Excellence Scholarship | 2017",
@@ -124,7 +124,7 @@ export const education = [
 export const leadership = [
     {
         title: "Secretary",
-        subtitle: "Software Engineering Student’s Association (SESA) | 2022",
+        subtitle: "Software Engineering Students Association (SESA) | 2022",
         details: [
             <DetailsItem size="small">Overhaul meeting and task tracking system to comply with changing university policy</DetailsItem>,
             <DetailsItem size="small">Uphold and enforce SESA constitution</DetailsItem>,
@@ -133,7 +133,7 @@ export const leadership = [
     },
     {
         title: "Part IV Representative",
-        subtitle: "Software Engineering Student’s Association (SESA) | 2021",
+        subtitle: "Software Engineering Students Association (SESA) | 2021",
         details: [
             <DetailsItem size="small">{"Organised and MC’d SESA’s inaugural hackathon, with various industry professionals and >100 students"}</DetailsItem>,
             <DetailsItem size="small">Represented SESA at student wellbeing panel for all engineering student associations</DetailsItem>,
@@ -150,7 +150,7 @@ export const leadership = [
     },
     {
         title: "Peer Mentor",
-        subtitle: "Software Engineering Student’s Association (SESA) | 2021",
+        subtitle: "Software Engineering Students Association (SESA) | 2021",
         details: [
             <DetailsItem size="small">Mentored a Part II (2nd year) software engineering student through SESA’s mentoring program</DetailsItem>,
             <DetailsItem size="small">Provided advice & guidance regarding university courses, internships, recruitment, study/life balance, etc.</DetailsItem>,

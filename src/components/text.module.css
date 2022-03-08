@@ -17,14 +17,30 @@
     font-weight: bold;
 }
 
+.title {
+    margin-bottom: 0.5rem;
+}
+
 .subTitle {
     color: #686868;
 }
 
 .sectionTitle {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
     color: #686868;
+}
+
+.heading {
+    margin-bottom: 0.25rem
+}
+
+.subHeading {
+    margin-bottom: 0.25rem;
+}
+
+.description {
+    margin-bottom: 0.5rem;
 }
 
 .description {
@@ -33,16 +49,20 @@
 
 .detailsItem {
     color: #4B4B4B;
+    margin-bottom: 0.25rem;
 }
 
 .text {
     margin-bottom: 0.25rem;
 }
 
-.small.heading, .small.subHeading {
+.small.heading {
     font-size: 1rem;
 }
 
-.small.description, .small.detailsItem {
-    font-size: 0.8rem;
+.small.subHeading,
+.small.description,
+.small.detailsItem,
+.small.text {
+    font-size: 0.85rem;
 }

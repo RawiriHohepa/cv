@@ -15,7 +15,7 @@ type EntryProps = {
 
 const Entry = (props: EntryProps) => {
     return (
-        <div style={{ marginBottom: "0.5rem" }}>
+        <div style={{ marginBottom: "1rem" }}>
             <Heading size={props.size}>{props.title}</Heading>
             {!!props.subtitle && <SubHeading size={props.size}>{props.subtitle}</SubHeading>}
             {!!props.description && <Description size={props.size}>{props.description}</Description>}

@@ -61,7 +61,7 @@ const renderDetails = (entry: EntryPropsDetails, size?: "small" | "regular") => 
 
 const renderText = (entry: EntryPropsText, size?: "small" | "regular") => (
     <div key={entry.title}>
-        <Text><Bold>{entry.title}</Bold>: {entry.subtitle}</Text>
+        <Text>{entry.title}: <span style={{ color: "#4B4B4B" }}>{entry.subtitle}</span></Text>
     </div>
 )
 
@@ -72,10 +72,10 @@ const renderEducation = (entry: EntryPropsEducation, size?: "small" | "regular")
         description={entry.description}
     >
         {entry.gpa}
-        <Text>Awards:</Text>
+        <Text size="small">Awards:</Text>
         <div style={{ marginLeft: "1.5rem" }}>
             {entry.awards.map(award => (
-                <Text key={award} style={{ color: "#4B4B4B" }}>{award}</Text>
+                <Text key={award} size="small" style={{ color: "#4B4B4B" }}>{award}</Text>
             ))}
         </div>
     </Entry>

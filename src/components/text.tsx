@@ -21,7 +21,7 @@ export const Heading = (props: TextProps) =>
     <h3 className={`${styles.heading} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</h3>
 
 export const SubHeading = (props: TextProps) => 
-    <h3 className={`${styles.subHeading} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</h3>
+    <h4 className={`${styles.subHeading} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</h4>
 
 export const Description = (props: TextProps) => 
     <h4 className={`${styles.description} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</h4>
@@ -33,7 +33,7 @@ export const DetailsItem = (props: TextProps) =>
     <li className={`${styles.detailsItem} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</li>
 
 export const Text = (props: TextProps) => 
-    <p className={styles.text} style={props.style}>{props.children}</p>
+    <p className={`${styles.text} ${styles[props.size || defaultSize]}`} style={props.style}>{props.children}</p>
 
 export const Bold = (props: TextProps) => 
     <span className={styles.bold} style={props.style}>{props.children}</span>
