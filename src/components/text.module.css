@@ -1,0 +1,48 @@
+.title,
+.subTitle,
+.sectionTitle,
+.heading,
+.subHeading,
+.description,
+.details,
+.detailsItem,
+.text {
+    margin: 0;
+    font-weight: normal;
+}
+
+.title,
+.heading,
+.bold {
+    font-weight: bold;
+}
+
+.subTitle {
+    color: #686868;
+}
+
+.sectionTitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #686868;
+}
+
+.description {
+    color: #686868;
+}
+
+.detailsItem {
+    color: #4B4B4B;
+}
+
+.text {
+    margin-bottom: 0.25rem;
+}
+
+.small.heading, .small.subHeading {
+    font-size: 1rem;
+}
+
+.small.description, .small.detailsItem {
+    font-size: 0.8rem;
+}
