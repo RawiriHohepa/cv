@@ -1,3 +1,5 @@
+// from https://medium.com/swlh/making-a-resume-in-html-or-react-bd1781abcdef
+
 const puppeteer = require('puppeteer');
 (async () => {
  // launch and create a new page
