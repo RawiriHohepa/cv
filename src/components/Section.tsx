@@ -25,7 +25,7 @@ type SectionPropsWithEducation = {
 
 type EntryPropsDetails = {
     title: string;
-    subtitle?: string;
+    subtitle?: string | JSX.Element;
     description?: string;
     details: JSX.Element[];
 }

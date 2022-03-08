@@ -1,6 +1,6 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { DetailsItem, Text, Bold } from "./components/text";
+import { DetailsItem, Text, Bold, SubHeading } from "./components/text";
 
 export const contacts = [
     {
@@ -54,7 +54,7 @@ export const experience = [
 export const projects = [
     {
         title: "Online Cards Against Humanity",
-        subtitle: "nerdsopposesociety.xyz | GitHub: nerds-oppose-society",
+        subtitle: <SubHeading><a href="https://nerdsopposesociety.xyz/" style={{ color: "#000000" }}>nerdsopposesociety.xyz</a> | GitHub: <a href="https://github.com/SE750-DART/nerds-oppose-society" style={{ color: "#000000" }}>nerds-oppose-society</a></SubHeading>,
         description: "May 2021",
         details: [
             <DetailsItem>Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a <Bold>100% mark</Bold></DetailsItem>,
@@ -63,7 +63,8 @@ export const projects = [
     },
     {
         title: "Responsible Bar Searcher",
-        subtitle: "slosh.lol | GitHub: Sloshed",
+        // subtitle: <SubHeading><a href="https://slosh.lol/" style={{ color: "#000000" }}>slosh.lol</a> | GitHub: <a href="https://github.com/Alxjlv/Sloshed" style={{ color: "#000000" }}>Sloshed</a></SubHeading>,
+        subtitle: <SubHeading>GitHub: <a href="https://github.com/Alxjlv/Sloshed" style={{ color: "#000000" }}>Sloshed</a></SubHeading>,
         description: "Aug 2020",
         details: [
             <DetailsItem>Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using <Bold>Google Places & Geolocation APIs</Bold></DetailsItem>,
@@ -72,7 +73,7 @@ export const projects = [
     },
     {
         title: "Investments Tracker",
-        subtitle: "GitHub: Investments-Tracker",
+        subtitle: <SubHeading>GitHub: <a href="https://github.com/RawiriHohepa/Investments-Tracker" style={{ color: "#000000" }}>Investments-Tracker</a></SubHeading>,
         description: "Ongoing",
         details: [
             <DetailsItem>Created <Bold>ExpressJS</Bold> API written in <Bold>Typescript</Bold> to automatically retrieve and collate personal investments using <Bold>web scraping</Bold> & external APIs</DetailsItem>,
