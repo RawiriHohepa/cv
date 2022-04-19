@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "save": "node src/scripts/saveAsPdf.js"
   },
@@ -39,6 +39,14 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.24"
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/styled-components": "^5.1.24",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^17.0.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
