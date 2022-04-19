@@ -26,36 +26,53 @@ export const contacts = [
     },
 ];
 
-export const projects = [
-    {
-        title: "Online Cards Against Humanity",
-        subtitle: <SubHeading><a href="https://nerdsopposesociety.xyz/" style={{ color: "#000000" }}>nerdsopposesociety.xyz</a> | GitHub: <a href="https://github.com/SE750-DART/nerds-oppose-society" style={{ color: "#000000" }}>nerds-oppose-society</a></SubHeading>,
-        description: "May 2021",
-        details: [
-            <DetailsItem>Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a <Bold>100% mark</Bold></DetailsItem>,
-            <DetailsItem>Integrated <Bold>React</Bold> frontend system with <Bold>SocketJS</Bold> & <Bold>ExpressJS</Bold> backend systems written in <Bold>Typescript</Bold></DetailsItem>,
-        ],
-    },
-    {
-        title: "Responsible Bar Searcher",
-        // subtitle: <SubHeading><a href="https://slosh.lol/" style={{ color: "#000000" }}>slosh.lol</a> | GitHub: <a href="https://github.com/Alxjlv/Sloshed" style={{ color: "#000000" }}>Sloshed</a></SubHeading>,
-        subtitle: <SubHeading>GitHub: <a href="https://github.com/Alxjlv/Sloshed" style={{ color: "#000000" }}>Sloshed</a></SubHeading>,
-        description: "Aug 2020",
-        details: [
-            <DetailsItem>Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using <Bold>Google Places & Geolocation APIs</Bold></DetailsItem>,
-            <DetailsItem><Bold>Won Best Design</Bold> at Summer of Tech's 2020 Create Camp Hackathon</DetailsItem>,
-        ],
-    },
-    {
-        title: "Investments Tracker",
-        subtitle: <SubHeading>GitHub: <a href="https://github.com/RawiriHohepa/Investments-Tracker" style={{ color: "#000000" }}>Investments-Tracker</a></SubHeading>,
-        description: "Ongoing",
-        details: [
-            <DetailsItem>Created <Bold>ExpressJS</Bold> API written in <Bold>Typescript</Bold> to automatically retrieve and collate personal investments using <Bold>web scraping</Bold> & external APIs</DetailsItem>,
-            <DetailsItem>Future plans to automatically call API periodically, store results in a <Bold>MongoDB</Bold> database, and display helpful statistics in a <Bold>React</Bold> webapp</DetailsItem>,
-        ],
-    },
-];
+export const experience = `# Experience
+
+:::div
+## Full Stack Developer | Maverick
+####  Nov 2021 — Feb 2022 (4 months)
+- Created **React Typescript** webapp from scratch for a digital pilates platform, and integrated with **C#** API
+- Created **NextJS Typescript** webapp MVP from scratch for a non-profit food organisation, and integrated with Strapi **Content Management System (CMS)**
+:::
+
+:::div
+## Software Developer Intern | Pocketful
+#### Aug 2020 — Feb 2021 (7 months)
+- Overhauled **React Native** user interface using newly created components written in **Typescript**
+- Liaised with and integrated external company in **C# & React Native** proof-of-concept to reward users with digital vouchers
+:::
+
+:::div
+## Software Engineer Intern | ASB Bank
+#### Nov 2019 — Feb 2020 (4 months)
+- Designed and created **React** webapp and **C#** Web API to store, retrieve, and display international payment updates
+:::`
+
+export const projects = `# Projects
+
+:::div
+## Online Cards Against Humanity
+### [nerdsopposesociety.xyz](https://nerdsopposesociety.xyz/) | GitHub: [nerds-oppose-society](https://github.com/SE750-DART/nerds-oppose-society)
+#### May 2021
+- Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a **100% mark**
+- Integrated **React** frontend system with **SocketJS** & **ExpressJS** backend systems written in **Typescript**
+:::
+
+:::div
+## Responsible Bar Searcher
+### GitHub: [Sloshed](https://github.com/Alxjlv/Sloshed)
+#### Aug 2020
+- Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using **Google Places & Geolocation APIs**
+- **Won Best Design** at Summer of Tech's 2020 Create Camp Hackathon
+:::
+
+:::div
+## Investments Tracker
+### GitHub: [Investments-Tracker](https://github.com/RawiriHohepa/Investments-Tracker)
+#### Ongoing
+- Created **ExpressJS** API written in **Typescript** to automatically retrieve and collate personal investments using **web scraping** & external APIs
+- Future plans to automatically call API periodically, store results in a **MongoDB** database, and display helpful statistics in a **React** webapp
+:::`
 
 export const skills = [
     {

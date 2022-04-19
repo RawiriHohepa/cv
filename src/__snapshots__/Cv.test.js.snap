@@ -313,6 +313,8 @@ exports[`should render correctly 1`] = `
       >
         Projects
       </h2>
+      
+
       <div
         style={
           Object {
@@ -356,40 +358,44 @@ exports[`should render correctly 1`] = `
           May 2021
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a 
-              <span>
-                100% mark
-              </span>
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Integrated 
-              <span>
-                React
-              </span>
-               frontend system with 
-              <span>
-                SocketJS
-              </span>
-               & 
-              <span>
-                ExpressJS
-              </span>
-               backend systems written in 
-              <span>
-                Typescript
-              </span>
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Created a responsive, mobile-first webapp of Cards Against Humanity for a university project, earning a 
+            <strong>
+              100% mark
+            </strong>
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Integrated 
+            <strong>
+              React
+            </strong>
+             frontend system with 
+            <strong>
+              SocketJS
+            </strong>
+             & 
+            <strong>
+              ExpressJS
+            </strong>
+             backend systems written in 
+            <strong>
+              Typescript
+            </strong>
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -423,28 +429,32 @@ exports[`should render correctly 1`] = `
           Aug 2020
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using 
-              <span>
-                Google Places & Geolocation APIs
-              </span>
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              <span>
-                Won Best Design
-              </span>
-               at Summer of Tech's 2020 Create Camp Hackathon
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Led backend development on HTML/CSS & Javascript webapp to display nearby bars and liquor stores using 
+            <strong>
+              Google Places & Geolocation APIs
+            </strong>
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            <strong>
+              Won Best Design
+            </strong>
+             at Summer of Tech's 2020 Create Camp Hackathon
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -478,40 +488,42 @@ exports[`should render correctly 1`] = `
           Ongoing
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Created 
-              <span>
-                ExpressJS
-              </span>
-               API written in 
-              <span>
-                Typescript
-              </span>
-               to automatically retrieve and collate personal investments using 
-              <span>
-                web scraping
-              </span>
-               & external APIs
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Future plans to automatically call API periodically, store results in a 
-              <span>
-                MongoDB
-              </span>
-               database, and display helpful statistics in a 
-              <span>
-                React
-              </span>
-               webapp
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Created 
+            <strong>
+              ExpressJS
+            </strong>
+             API written in 
+            <strong>
+              Typescript
+            </strong>
+             to automatically retrieve and collate personal investments using 
+            <strong>
+              web scraping
+            </strong>
+             & external APIs
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Future plans to automatically call API periodically, store results in a 
+            <strong>
+              MongoDB
+            </strong>
+             database, and display helpful statistics in a 
+            <strong>
+              React
+            </strong>
+             webapp
+          </li>
+          
+
         </ul>
       </div>
     </div>
