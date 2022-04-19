@@ -814,113 +814,73 @@ exports[`should render correctly 1`] = `
       >
         Ask me about...
       </h2>
-      <div>
-        <p
-          className="undefined undefined"
-        >
-          Frontend
-          : 
-          <span
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
-          >
-            React, React Native, NextJS, TypeScript, JavaScript, HTML/CSS
-          </span>
-        </p>
-      </div>
-      <div>
-        <p
-          className="undefined undefined"
-        >
-          Backend
-          : 
-          <span
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
-          >
-            ExpressJS, NodeJS, MongoDB, C# Entity Framework, Java
-          </span>
-        </p>
-      </div>
-      <div>
-        <p
-          className="undefined undefined"
-        >
-          Design
-          : 
-          <span
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
-          >
-            Figma
-          </span>
-        </p>
-      </div>
-      <div>
-        <p
-          className="undefined undefined"
-        >
-          Version control
-          : 
-          <span
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
-          >
-            Git, GitHub
-          </span>
-        </p>
-      </div>
-      <div>
-        <p
-          className="undefined undefined"
-        >
-          Languages
-          : 
-          <span
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
-          >
-            TypeScript, JavaScript, Java, C#, SQL
-          </span>
-        </p>
-      </div>
-      <div>
-        <p
-          className="undefined undefined"
-        >
-          Interests
-          : 
-          <span
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
-          >
-            Tabletop roleplaying, Video games, Finances
-          </span>
-        </p>
-      </div>
+      
+
+      <p
+        className="undefined undefined"
+      >
+        <strong>
+          Frontend:
+        </strong>
+         React, React Native, NextJS, TypeScript, JavaScript, HTML/CSS
+      </p>
+      
+
+      <p
+        className="undefined undefined"
+      >
+        <strong>
+          Backend:
+        </strong>
+         ExpressJS, NodeJS, MongoDB, C# Entity Framework, Java
+      </p>
+      
+
+      <p
+        className="undefined undefined"
+      >
+        <strong>
+          Design:
+        </strong>
+         Figma
+      </p>
+      
+
+      <p
+        className="undefined undefined"
+      >
+        <strong>
+          Version control:
+        </strong>
+         Git, GitHub
+      </p>
+      
+
+      <p
+        className="undefined undefined"
+      >
+        <strong>
+          Languages:
+        </strong>
+         TypeScript, JavaScript, Java, C#, SQL
+      </p>
+      
+
+      <p
+        className="undefined undefined"
+      >
+        <strong>
+          Interests:
+        </strong>
+         Tabletop roleplaying, Video games, Finances
+      </p>
       <h2
         className="undefined undefined"
       >
         References
       </h2>
+      
+
       <p
         className="undefined undefined"
       >

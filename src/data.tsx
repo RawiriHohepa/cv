@@ -1,7 +1,7 @@
 import React from "react";
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { DetailsItem, Text, Bold, SubHeading } from "./components/text";
+import { Text, Bold } from "./components/text";
 
 export const contacts = [
     {
@@ -74,32 +74,18 @@ export const projects = `# Projects
 - Future plans to automatically call API periodically, store results in a **MongoDB** database, and display helpful statistics in a **React** webapp
 :::`
 
-export const skills = [
-    {
-        title: "Frontend",
-        subtitle: "React, React Native, NextJS, TypeScript, JavaScript, HTML/CSS",
-    },
-    {
-        title: "Backend",
-        subtitle: "ExpressJS, NodeJS, MongoDB, C# Entity Framework, Java",
-    },
-    {
-        title: "Design",
-        subtitle: "Figma",
-    },
-    {
-        title: "Version control",
-        subtitle: "Git, GitHub",
-    },
-    {
-        title: "Languages",
-        subtitle: "TypeScript, JavaScript, Java, C#, SQL",
-    },
-    {
-        title: "Interests",
-        subtitle: "Tabletop roleplaying, Video games, Finances",
-    },
-];
+export const skills = `# Ask me about...
+**Frontend:** React, React Native, NextJS, TypeScript, JavaScript, HTML/CSS
+
+**Backend:** ExpressJS, NodeJS, MongoDB, C# Entity Framework, Java
+
+**Design:** Figma
+
+**Version control:** Git, GitHub
+
+**Languages:** TypeScript, JavaScript, Java, C#, SQL
+
+**Interests:** Tabletop roleplaying, Video games, Finances`
 
 export const education = [
     {
@@ -152,3 +138,6 @@ export const leadership = `# Leadership & Community
 - Supported & tutored Part I & II (1st & 2nd year) engineering students
 - Facilitated understanding of lecture notes and preparation for tests, assignments, and exams
 :::`
+
+export const references = `# References
+Available upon request`

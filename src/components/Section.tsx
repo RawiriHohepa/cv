@@ -1,38 +1,18 @@
 import React from "react";
 import Entry from "./Entry";
-import { Details, SectionTitle, Text, Bold } from "./text";
+import { SectionTitle, Text } from "./text";
 
 type SectionProps = {
     title: string;
     size?: "regular" | "small";
 } & (
-    | SectionPropsWithDetails
-    | SectionPropsWithText
     | SectionPropsWithEducation
 );
-type SectionPropsWithDetails = {
-    type: "details";
-    entries: EntryPropsDetails[];
-}
-type SectionPropsWithText = {
-    type: "text";
-    entries: EntryPropsText[];
-}
 type SectionPropsWithEducation = {
     type: "education";
     entries: EntryPropsEducation[];
 }
 
-type EntryPropsDetails = {
-    title: string;
-    subtitle?: string | JSX.Element;
-    description?: string;
-    details: JSX.Element[];
-}
-type EntryPropsText = {
-    title: string;
-    subtitle: string;
-}
 type EntryPropsEducation = {
     title: string;
     subtitle: string;
@@ -40,30 +20,6 @@ type EntryPropsEducation = {
     gpa: JSX.Element;
     awards: string[];
 }
-
-const renderDetails = (entry: EntryPropsDetails, size?: "small" | "regular") => (
-    <Entry
-        key={entry.title}
-        title={entry.title}
-        subtitle={entry.subtitle}
-        description={entry.description}
-        size={size}
-    >
-        <Details>
-            {entry.details.map((detail, index) => (
-                <div key={index}>
-                    {detail}
-                </div>
-            ))}
-        </Details>
-    </Entry>
-)
-
-const renderText = (entry: EntryPropsText, size?: "small" | "regular") => (
-    <div key={entry.title}>
-        <Text size={size}>{entry.title}: <span style={{ color: "#4B4B4B" }}>{entry.subtitle}</span></Text>
-    </div>
-)
 
 const renderEducation = (entry: EntryPropsEducation, size?: "small" | "regular") => (
     <Entry
@@ -83,20 +39,6 @@ const renderEducation = (entry: EntryPropsEducation, size?: "small" | "regular")
 
 const Section = (props: SectionProps) => {
     switch (props.type) {
-        case "details":
-            return (
-                <>
-                    <SectionTitle size={props.size}>{props.title}</SectionTitle>
-                    {props.entries.map(entry => renderDetails(entry, props.size))}
-                </>
-            );
-        case "text":
-            return (
-                <>
-                    <SectionTitle size={props.size}>{props.title}</SectionTitle>
-                    {props.entries.map(entry => renderText(entry, props.size))}
-                </>
-            );
         case "education":
             return (
                 <>

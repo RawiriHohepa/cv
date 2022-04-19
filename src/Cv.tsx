@@ -23,6 +23,7 @@ import {
     skills,
     education,
     leadership,
+    references,
 } from "./data";
 
 const Paper = styled.div`
@@ -135,15 +136,15 @@ const Cv = () => {
                         div: ({ children }) => <div style={{ marginBottom: "0.5rem" }}>{children}</div>
                     }} />
 
-                    <Section
-                        type="text"
-                        title="Ask me about..."
-                        entries={skills}
-                        size="small"
-                    />
+                    <ReactMarkdown className={styles.small} children={skills} components={{
+                        h1: SectionTitle,
+                        p: Text,
+                    }} />
 
-                    <SectionTitle size="small">References</SectionTitle>
-                    <Text>Available upon request</Text>
+                    <ReactMarkdown children={references} components={{
+                        h1: ({ children }) => <SectionTitle size="small">{children}</SectionTitle>,
+                        p: Text,
+                    }} />
                 </RightSection>
             </Content>
         </Paper>
