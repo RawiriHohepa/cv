@@ -605,6 +605,8 @@ exports[`should render correctly 1`] = `
       >
         Leadership & Community
       </h2>
+      
+
       <div
         style={
           Object {
@@ -623,29 +625,33 @@ exports[`should render correctly 1`] = `
           Software Engineering Students Association (SESA) | 2022
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Overhaul meeting and task tracking system to comply with changing university policy
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Uphold and enforce SESA constitution
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Organise and record executive commitee meetings
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Overhaul meeting and task tracking system to comply with changing university policy
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Uphold and enforce SESA constitution
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Organise and record executive commitee meetings
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -664,29 +670,33 @@ exports[`should render correctly 1`] = `
           Software Engineering Students Association (SESA) | 2021
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Organised and MC’d SESA’s inaugural hackathon, with various industry professionals and &gt;100 students
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Represented SESA at student wellbeing panel for all engineering student associations
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Organised and ran various industry & social events for software engineering students
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Organised and MC’d SESA’s inaugural hackathon, with various industry professionals and &gt;100 students
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Represented SESA at student wellbeing panel for all engineering student associations
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Organised and ran various industry & social events for software engineering students
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -705,22 +715,26 @@ exports[`should render correctly 1`] = `
           20-Person University Project | Apr 2021
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Managed frontend team in project to create a digital bullet journal webapp, earning an A grade
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Organised and led team meetings, liased with design team, assigned tasks to team members
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Managed frontend team in project to create a digital bullet journal webapp, earning an A grade
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Organised and led team meetings, liased with design team, assigned tasks to team members
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -739,22 +753,26 @@ exports[`should render correctly 1`] = `
           Software Engineering Students Association (SESA) | 2021
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Mentored a Part II (2nd year) software engineering student through SESA’s mentoring program
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Provided advice & guidance regarding university courses, internships, recruitment, study/life balance, etc.
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Mentored a Part II (2nd year) software engineering student through SESA’s mentoring program
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Provided advice & guidance regarding university courses, internships, recruitment, study/life balance, etc.
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -773,20 +791,22 @@ exports[`should render correctly 1`] = `
           UoA Part I & II Assistance Centres | 2019, 2020
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Supported & tutored Part I & II (1st & 2nd year) engineering students
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Facilitated understanding of lecture notes and preparation for tests, assignments, and exams
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Supported & tutored Part I & II (1st & 2nd year) engineering students
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Facilitated understanding of lecture notes and preparation for tests, assignments, and exams
+          </li>
+          
+
         </ul>
       </div>
       <h2

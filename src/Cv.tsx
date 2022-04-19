@@ -2,6 +2,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkDirective from "remark-directive";
 import styled from "styled-components";
+import styles from "./components/text.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     Title,
@@ -125,12 +126,14 @@ const Cv = () => {
                         size="small"
                     />
 
-                    <Section
-                        type="details"
-                        title="Leadership & Community"
-                        entries={leadership}
-                        size="small"
-                    />
+                    <ReactMarkdown className={styles.small} children={leadership} remarkPlugins={[remarkDirective]} components={{
+                        h1: SectionTitle,
+                        h2: Heading,
+                        h3: SubHeading,
+                        ul: Details,
+                        li: DetailsItem,
+                        div: ({ children }) => <div style={{ marginBottom: "0.5rem" }}>{children}</div>
+                    }} />
 
                     <Section
                         type="text"

@@ -114,47 +114,41 @@ export const education = [
     },
 ];
 
-export const leadership = [
-    {
-        title: "Secretary",
-        subtitle: "Software Engineering Students Association (SESA) | 2022",
-        details: [
-            <DetailsItem size="small">Overhaul meeting and task tracking system to comply with changing university policy</DetailsItem>,
-            <DetailsItem size="small">Uphold and enforce SESA constitution</DetailsItem>,
-            <DetailsItem size="small">Organise and record executive commitee meetings</DetailsItem>,
-        ],
-    },
-    {
-        title: "Part IV Representative",
-        subtitle: "Software Engineering Students Association (SESA) | 2021",
-        details: [
-            <DetailsItem size="small">{"Organised and MC’d SESA’s inaugural hackathon, with various industry professionals and >100 students"}</DetailsItem>,
-            <DetailsItem size="small">Represented SESA at student wellbeing panel for all engineering student associations</DetailsItem>,
-            <DetailsItem size="small">Organised and ran various industry & social events for software engineering students</DetailsItem>,
-        ],
-    },
-    {
-        title: "Frontend Team Lead",
-        subtitle: "20-Person University Project | Apr 2021",
-        details: [
-            <DetailsItem size="small">Managed frontend team in project to create a digital bullet journal webapp, earning an A grade</DetailsItem>,
-            <DetailsItem size="small">Organised and led team meetings, liased with design team, assigned tasks to team members</DetailsItem>,
-        ],
-    },
-    {
-        title: "Peer Mentor",
-        subtitle: "Software Engineering Students Association (SESA) | 2021",
-        details: [
-            <DetailsItem size="small">Mentored a Part II (2nd year) software engineering student through SESA’s mentoring program</DetailsItem>,
-            <DetailsItem size="small">Provided advice & guidance regarding university courses, internships, recruitment, study/life balance, etc.</DetailsItem>,
-        ],
-    },
-    {
-        title: "Tutor",
-        subtitle: "UoA Part I & II Assistance Centres | 2019, 2020",
-        details: [
-            <DetailsItem size="small">Supported & tutored Part I & II (1st & 2nd year) engineering students</DetailsItem>,
-            <DetailsItem size="small">Facilitated understanding of lecture notes and preparation for tests, assignments, and exams</DetailsItem>,
-        ],
-    },
-];
+export const leadership = `# Leadership & Community
+
+:::div
+## Secretary
+### Software Engineering Students Association (SESA) | 2022
+- Overhaul meeting and task tracking system to comply with changing university policy
+- Uphold and enforce SESA constitution
+- Organise and record executive commitee meetings
+:::
+
+:::div
+## Part IV Representative
+### Software Engineering Students Association (SESA) | 2021
+- Organised and MC’d SESA’s inaugural hackathon, with various industry professionals and >100 students
+- Represented SESA at student wellbeing panel for all engineering student associations
+- Organised and ran various industry & social events for software engineering students
+:::
+
+:::div
+## Frontend Team Lead
+### 20-Person University Project | Apr 2021
+- Managed frontend team in project to create a digital bullet journal webapp, earning an A grade
+- Organised and led team meetings, liased with design team, assigned tasks to team members
+:::
+
+:::div
+## Peer Mentor
+### Software Engineering Students Association (SESA) | 2021
+- Mentored a Part II (2nd year) software engineering student through SESA’s mentoring program
+- Provided advice & guidance regarding university courses, internships, recruitment, study/life balance, etc.
+:::
+
+:::div
+## Tutor
+### UoA Part I & II Assistance Centres | 2019, 2020
+- Supported & tutored Part I & II (1st & 2nd year) engineering students
+- Facilitated understanding of lecture notes and preparation for tests, assignments, and exams
+:::`

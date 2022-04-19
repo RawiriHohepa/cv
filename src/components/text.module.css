@@ -56,18 +56,22 @@
     margin-bottom: 0.25rem;
 }
 
-.small.heading {
+.small.heading, .small .heading {
     font-size: 1rem;
 }
 
 .small.subHeading,
 .small.description,
 .small.detailsItem,
-.small.text {
+.small.text,
+.small .subHeading,
+.small .description,
+.small .detailsItem,
+.small .text {
     font-size: 0.85rem;
 }
 
-.small.sectionTitle {
+.small.sectionTitle, .small .sectionTitle {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
