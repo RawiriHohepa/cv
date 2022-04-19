@@ -15,7 +15,6 @@ import {
     Details,
     DetailsItem,
 } from "./components/text";
-import Section from "./components/Section";
 import {
     contacts,
     experience,
@@ -65,7 +64,7 @@ const RightSection = styled.div`
     height: 100%;
     box-sizing: border-box;
     padding: 2rem 3rem 2rem 1.5rem;
-    & > :first-child {
+    & > :first-child > :first-child {
         margin-top: 0;
     }
 
@@ -120,12 +119,16 @@ const Cv = () => {
                 </LeftSection>
 
                 <RightSection>
-                    <Section
-                        type="education"
-                        title="Education"
-                        entries={education}
-                        size="small"
-                    />
+                    <div style={{ marginBottom: "1rem" }}>
+                        <ReactMarkdown children={education} remarkPlugins={[remarkDirective]} components={{
+                            h1: ({ children }) => <SectionTitle size="small">{children}</SectionTitle>,
+                            h2: Heading,
+                            h3: SubHeading,
+                            h4: Description,
+                            p: ({ children }) => <Text size="small">{children}</Text>,
+                            div: ({ children }) => <div style={{ color: "#4B4B4B", marginLeft: "1.5rem" }}>{children}</div>
+                        }} />
+                    </div>
 
                     <ReactMarkdown className={styles.small} children={leadership} remarkPlugins={[remarkDirective]} components={{
                         h1: SectionTitle,

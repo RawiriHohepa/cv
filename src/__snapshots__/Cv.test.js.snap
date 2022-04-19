@@ -547,54 +547,55 @@ exports[`should render correctly 1`] = `
         >
           University of Auckland | BE (Hons) & BA
         </h3>
+        
+
         <h4
           className="undefined undefined"
         >
           Software Engineering, Psychology, Māori Studies
         </h4>
+        
+
         <h4
           className="undefined undefined"
         >
           Mar 2018 — Nov 2022
         </h4>
+        
+
         <p
           className="undefined undefined"
         >
           GPA 8.6/9 (
-          <span>
+          <strong>
             A to A+
-          </span>
+          </strong>
            average)
         </p>
+        
+
         <p
           className="undefined undefined"
         >
           Awards:
         </p>
+        
+
         <div
           style={
             Object {
+              "color": "#4B4B4B",
               "marginLeft": "1.5rem",
             }
           }
         >
           <p
             className="undefined undefined"
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
           >
             Dean’s Honours List | 2018, 2019, 2021
           </p>
           <p
             className="undefined undefined"
-            style={
-              Object {
-                "color": "#4B4B4B",
-              }
-            }
           >
             Māori Academic Excellence Scholarship | 2017
           </p>

@@ -1,7 +1,5 @@
-import React from "react";
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { Text, Bold } from "./components/text";
 
 export const contacts = [
     {
@@ -75,6 +73,7 @@ export const projects = `# Projects
 :::`
 
 export const skills = `# Ask me about...
+
 **Frontend:** React, React Native, NextJS, TypeScript, JavaScript, HTML/CSS
 
 **Backend:** ExpressJS, NodeJS, MongoDB, C# Entity Framework, Java
@@ -87,18 +86,21 @@ export const skills = `# Ask me about...
 
 **Interests:** Tabletop roleplaying, Video games, Finances`
 
-export const education = [
-    {
-        title: "University of Auckland | BE (Hons) & BA",
-        subtitle: "Software Engineering, Psychology, Māori Studies",
-        description: "Mar 2018 — Nov 2022",
-        gpa: <Text size="small">GPA 8.6/9 (<Bold>A to A+</Bold> average)</Text>,
-        awards: [
-            "Dean’s Honours List | 2018, 2019, 2021",
-            "Māori Academic Excellence Scholarship | 2017",
-        ],
-    },
-];
+export const education = `# Education
+
+## University of Auckland | BE (Hons) & BA
+### Software Engineering, Psychology, Māori Studies
+#### Mar 2018 — Nov 2022
+
+GPA 8.6/9 (**A to A+** average)
+
+Awards:
+
+:::div
+Dean’s Honours List | 2018, 2019, 2021
+
+Māori Academic Excellence Scholarship | 2017
+:::`
 
 export const leadership = `# Leadership & Community
 
@@ -140,4 +142,5 @@ export const leadership = `# Leadership & Community
 :::`
 
 export const references = `# References
+
 Available upon request`
