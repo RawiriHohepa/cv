@@ -12,7 +12,9 @@
     "puppeteer": "^13.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.2",
     "react-scripts": "5.0.0",
+    "remark-directive": "^2.0.1",
     "styled-components": "^5.3.3",
     "typescript": "^4.6.2"
   },
@@ -47,6 +49,9 @@
   "jest": {
     "moduleNameMapper": {
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-markdown|remark-*|vfile|unist-util-*|hast-util-*|mdast-util-*|unified|bail|is-plain-obj|trough|micromark|decode-named-character-reference|character-entities|unist-builder|property-information|comma-separated-tokens|space-separated-tokens|parse-entities|character-reference-invalid|is-*|stringify-entities)"
+    ]
   }
 }

@@ -26,32 +26,6 @@ export const contacts = [
     },
 ];
 
-export const experience = [
-    {
-        title: "Full Stack Developer | Maverick",
-        description: "Nov 2021 — Feb 2022 (4 months)",
-        details: [
-            <DetailsItem>Created <Bold>React Typescript</Bold> webapp from scratch for a digital pilates platform, and integrated with <Bold>C#</Bold> API</DetailsItem>,
-            <DetailsItem>Created <Bold>NextJS Typescript</Bold> webapp MVP from scratch for a non-profit food organisation, and integrated with Strapi <Bold>Content Management System (CMS)</Bold></DetailsItem>,
-        ],
-    },
-    {
-        title: "Software Developer Intern | Pocketful",
-        description: "Aug 2020 — Feb 2021 (7 months)",
-        details: [
-            <DetailsItem>Overhauled <Bold>React Native</Bold> user interface using newly created components written in <Bold>Typescript</Bold></DetailsItem>,
-            <DetailsItem>Liaised with and integrated external company in <Bold>C#</Bold> & <Bold>React Native</Bold> proof-of-concept to reward users with digital vouchers</DetailsItem>,
-        ],
-    },
-    {
-        title: "Software Engineer Intern | ASB Bank",
-        description: "Nov 2019 — Feb 2020 (4 months)",
-        details: [
-            <DetailsItem>Designed and created <Bold>React</Bold> webapp and <Bold>C#</Bold> Web API to store, retrieve, and display international payment updates</DetailsItem>,
-        ],
-    },
-];
-
 export const projects = [
     {
         title: "Online Cards Against Humanity",

@@ -167,6 +167,8 @@ exports[`should render correctly 1`] = `
       >
         Experience
       </h2>
+      
+
       <div
         style={
           Object {
@@ -185,37 +187,41 @@ exports[`should render correctly 1`] = `
           Nov 2021 — Feb 2022 (4 months)
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Created 
-              <span>
-                React Typescript
-              </span>
-               webapp from scratch for a digital pilates platform, and integrated with 
-              <span>
-                C#
-              </span>
-               API
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Created 
-              <span>
-                NextJS Typescript
-              </span>
-               webapp MVP from scratch for a non-profit food organisation, and integrated with Strapi 
-              <span>
-                Content Management System (CMS)
-              </span>
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Created 
+            <strong>
+              React Typescript
+            </strong>
+             webapp from scratch for a digital pilates platform, and integrated with 
+            <strong>
+              C#
+            </strong>
+             API
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Created 
+            <strong>
+              NextJS Typescript
+            </strong>
+             webapp MVP from scratch for a non-profit food organisation, and integrated with Strapi 
+            <strong>
+              Content Management System (CMS)
+            </strong>
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -234,37 +240,37 @@ exports[`should render correctly 1`] = `
           Aug 2020 — Feb 2021 (7 months)
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Overhauled 
-              <span>
-                React Native
-              </span>
-               user interface using newly created components written in 
-              <span>
-                Typescript
-              </span>
-            </li>
-          </div>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Liaised with and integrated external company in 
-              <span>
-                C#
-              </span>
-               & 
-              <span>
-                React Native
-              </span>
-               proof-of-concept to reward users with digital vouchers
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Overhauled 
+            <strong>
+              React Native
+            </strong>
+             user interface using newly created components written in 
+            <strong>
+              Typescript
+            </strong>
+          </li>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Liaised with and integrated external company in 
+            <strong>
+              C# & React Native
+            </strong>
+             proof-of-concept to reward users with digital vouchers
+          </li>
+          
+
         </ul>
       </div>
+      
+
       <div
         style={
           Object {
@@ -283,21 +289,23 @@ exports[`should render correctly 1`] = `
           Nov 2019 — Feb 2020 (4 months)
         </h4>
         <ul>
-          <div>
-            <li
-              className="undefined undefined"
-            >
-              Designed and created 
-              <span>
-                React
-              </span>
-               webapp and 
-              <span>
-                C#
-              </span>
-               Web API to store, retrieve, and display international payment updates
-            </li>
-          </div>
+          
+
+          <li
+            className="undefined undefined"
+          >
+            Designed and created 
+            <strong>
+              React
+            </strong>
+             webapp and 
+            <strong>
+              C#
+            </strong>
+             Web API to store, retrieve, and display international payment updates
+          </li>
+          
+
         </ul>
       </div>
       <h2
